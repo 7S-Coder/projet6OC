@@ -1,0 +1,32 @@
+@import "../styles/Variables.scss";
+
+Header {
+  color: $primary-color;
+
+  display: flex;
+  padding-top: 45px;
+
+  height: 68px;
+  font-size: 1.6em;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+Header a {
+  float: right;
+  text-decoration: none;
+  color: $primary-color;
+}
+
+Header a:last-child {
+  padding-right: 20px;
+}
+
+.NavTop {
+  width: 100%;
+}
+
+.Logo {
+  float: left;
+}

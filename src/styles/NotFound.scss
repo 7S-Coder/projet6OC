@@ -1,0 +1,29 @@
+@import "./_variables";
+@import "./_mixins";
+@import "./_placeholders";
+
+.error404 {
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $primary-color;
+  //   @include absolute-el(50%, 0, 0, 50%, -50%, -50%);
+}
+
+.errorTitle {
+  font-size: 17em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0;
+}
+
+.errorSpan {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.errorLink {
+  font-size: 18px;
+  color: $primary-color;
+}

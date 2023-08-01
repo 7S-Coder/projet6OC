@@ -1,0 +1,35 @@
+@import "./_variables";
+@import "./_mixins";
+@import "./_placeholders";
+
+.HomeSign, .HomeSignTitle {
+    @include absolute-el(27%, 0, 0, 50%, -50%, -50%);
+    text-align: center;
+}
+
+.HomeSign, .ImgHS  {
+    height: 223px;
+    border-radius: 25px;
+}
+
+.ImgHS {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.30000001192092896;
+}
+
+.HomeSign {
+    background: #000;
+mix-blend-mode: darken;
+width: 95%;
+}
+
+.HomeSignTitle {
+    z-index: 1000;
+    color: #FFF;
+font-family: Montserrat;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%; /* 68.448px */
+}
