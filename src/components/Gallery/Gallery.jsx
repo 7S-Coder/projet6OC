@@ -1,8 +1,9 @@
 import "../../styles/Gallery.scss"
+import Card from "../Card/Card";
 export default function Navbar() {
   return (
-    <div className="Gallery">
-
-    </div>
+    <section className="Gallery">
+      < Card />
+    </section>
   );
 }

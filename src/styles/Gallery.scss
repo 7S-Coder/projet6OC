@@ -1,9 +1,19 @@
+@import './_variables';
+@import './mixins';
+@import './placeholders';
+
 .Gallery {
-    width: 100%;
-    height: 650px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 25px;
-    background-color: #F6F6F6;
-    overflow-y: auto;
+  @extend %flex-center;
+  padding: 25px 0;
+  margin: 10px 60px;
+  background-color: $color-clearGrey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  border-radius: 25px;
+  -webkit-animation: SHOW-BOX 2.5s ease-in-out;
+  -moz-animation: SHOW-BOX 2.5s ease-in-out;
+  -o-animation: SHOW-BOX 2.5s ease-in-out;
+  animation: SHOW-BOX 2.5s ease-in-out;
   }

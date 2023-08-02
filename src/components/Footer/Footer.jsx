@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer>
-      <div className="container">
+      <div className="Container">
         <Link to="/">
           <img
-            className="logoFooter"
-            src="../../../public/LOGO.svg"
+            className="LogoFooter"
+            src="../../../public/LOGOWHITE.svg"
             alt="Logo Kasa"
             width={100}
           />

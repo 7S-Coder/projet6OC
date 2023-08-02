@@ -1,0 +1,53 @@
+@import "./_variables";
+@import "./_mixins";
+@import "./_placeholders";
+
+.CardList {
+padding: 0 7%;
+}
+
+.CardBlock {
+    width: 350px;
+    height: 350px;
+    margin: 20px 10px;
+    transition: 0.3s;
+    border: 0px;
+    background-color: $color-clearGrey;
+
+    &:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+
+    .Card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            border-radius: 10px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        p {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: $color-white;
+            width: 50%;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+}
