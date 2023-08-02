@@ -1,32 +1,32 @@
-@import "../styles/Variables.scss";
+@import "./variables";
+@import "./mixins";
+@import "./placeholders";
 
-Header {
-  color: $primary-color;
-
-  display: flex;
-  padding-top: 45px;
-
-  height: 68px;
+.Header {
+  width:1440px;
   font-size: 1.6em;
-
-  padding-left: 40px;
-  padding-right: 40px;
+  margin: 0px auto;
+  margin-top: 10px;
 }
 
-Header a {
-  float: right;
+.Header a {
   text-decoration: none;
   color: $primary-color;
 }
 
-Header a:last-child {
+.Header ul a:first-child {
   padding-right: 20px;
+}
+
+.LinkList, Header {
+  display: flex;
+  align-items: center;
+}
+
+.LinkList {
+  float: right;
 }
 
 .NavTop {
   width: 100%;
-}
-
-.Logo {
-  float: left;
 }

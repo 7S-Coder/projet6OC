@@ -2,14 +2,11 @@
 @import "./_mixins";
 @import "./_placeholders";
 
-Footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   padding: 20px 0;
   padding-top: 40px;
   background-color: black;
@@ -17,7 +14,6 @@ Footer {
 }
 
 .container {
-  // @include absolute-el(50%, 0, 0, 50%, -50%, -50%);
   @extend %flex-center;
   flex-direction: column;
 }
@@ -29,4 +25,9 @@ Footer {
 span {
   width: 100%;
   text-align: center;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
 }

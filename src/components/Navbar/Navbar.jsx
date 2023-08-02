@@ -8,8 +8,10 @@ export default function Navbar() {
         <Link to="/" className="Logo">
           <img src="../../../public/LOGO.svg" alt="Logo Kasa" height={68} />
         </Link>
-        <Link to="/about"> A Propos</Link>
+        <ul className="LinkList">
         <Link to="/"> Accueil</Link>
+        <Link to="/about"> A Propos</Link>
+        </ul>
       </nav>
     </header>
   );

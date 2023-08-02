@@ -1,12 +1,22 @@
-@import "./styles/_variables.scss";
+@import "./styles/_variables";
+@import "./styles/mixins";
+@import "./styles/placeholders";
 
 :root {
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-  display: flex;
+body{
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.Centred {
+  @extend %flex-center;
+  align-items: center;
   flex-direction: column;
+  width:1440px;
+  margin: 0px auto;
+  flex-grow: 1;
 }
